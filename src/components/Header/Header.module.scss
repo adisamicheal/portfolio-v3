@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    @media screen and (max-width: 768px) {
+      padding: 20px 30px;
+    }
+    &__logo {
+      color: var(--primary-color);
+      &:hover {
+        color: var(--artistic-color);
+        transform: all 0.3s ease;
+      }
+    }
+}
