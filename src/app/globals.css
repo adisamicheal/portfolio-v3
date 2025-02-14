@@ -3,7 +3,7 @@
 :root {
   --background: #d9d9d9;
   --foreground: #111111;
-  --primary-color: var(--foreground);
+  --primary-color: #777777;
   --secondary-color: var(--background);
   --artistic-color: #72ffff;
 }

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
-        <p>MICHEAL ADISA</p>
+        <p>MICHEAL <br /> ADISA</p>
       </div>
       <div>
         <p>EKÁÀBÒ 👋🏾</p>
