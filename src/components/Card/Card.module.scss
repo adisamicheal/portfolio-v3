@@ -1,0 +1,97 @@
+.card {
+    max-width: 550px;
+    background-color: #000000;
+    border-radius: 0 0 20px 20px;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    // Initial state
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0);
+    
+    &:hover {
+        box-shadow: 0 0 30px rgba(63, 114, 175, 0.4);
+        transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.02) translateZ(20px);
+        
+        // Hover shine effect
+        &::before {
+            left: 150%;
+        }
+        
+        .card__name__icon {
+            animation: bounceUpDown 0.8s infinite;
+        }
+    }
+    
+    // Shine effect
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -150%;
+        width: 60%;
+        height: 200%;
+        background: linear-gradient(
+            90deg,
+            rgba(255,255,255,0.1) 0%,
+            rgba(255,255,255,0.2) 50%,
+            rgba(255,255,255,0.1) 100%
+        );
+        transform: rotate(45deg);
+        transition: left 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 1;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 16px;
+            transform: translateZ(30px);
+        }
+
+        &__icon {
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.5s;
+            transform: translateZ(40px);
+            
+            &:hover {
+                color: #ff0000;
+                transform: translateZ(40px) scale(1.2);
+            }
+        }
+    }
+}
+
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateY(0) translateZ(40px);
+    }
+    50% {
+        transform: translateY(-8px) translateZ(40px);
+    }
+}
+
+@keyframes arrowRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

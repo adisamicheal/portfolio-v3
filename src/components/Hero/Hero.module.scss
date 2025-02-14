@@ -63,6 +63,7 @@
     padding: 50px 20px;
     &__design,
     &__development {
+      margin: 100px 0;
       max-width: 500px;
       transform-style: preserve-3d;
       will-change: transform, opacity;

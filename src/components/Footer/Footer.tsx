@@ -4,6 +4,7 @@ import styles from "./Footer.module.scss";
 
 const Footer = () => {
   const [time, setTime] = useState("");
+  const [buttonText, setButtonText] = useState("Click here to copy");
 
   useEffect(() => {
     // Only runs on client-side
@@ -23,9 +24,24 @@ const Footer = () => {
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
   }, []);
+
   const goToSocial = (url: string) => {
     window.open(url, "_blank");
   };
+  
+  const clickToCopyEmail = () => {
+    const email = "adisamicheal20@gmail.com";
+
+    navigator.clipboard.writeText(email).then(
+      () => {
+        setButtonText("copied");
+        setTimeout(() => {
+          setButtonText("Click here to copy");
+        }, 2000);
+      },
+    );
+  }
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__collaborate}>
@@ -35,7 +51,10 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.footer__collaborate__email}>
-          <a href="mailto:adisamicheal20@gmail,com">adisamicheal20@gmail.com</a>
+          <Button className={styles.footer__collaborate__email__button} onClick={clickToCopyEmail}>
+            {buttonText}
+          </Button>
+          <a href="mailto:adisamicheal20@gmail.com">adisamicheal20@gmail.com</a>
         </div>
       </div>
       <div className={styles.footer__footnote}>
