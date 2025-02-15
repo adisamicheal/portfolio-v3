@@ -10,7 +10,6 @@
       margin: 10px 10px 50px 10px;
     }
     &__logo {
-    //   color: var(--primary-color);
     color: transparent;
     background: var(--primary-color);
     background-clip: text;
@@ -18,6 +17,10 @@
       &:hover {
         color: var(--artistic-color);
         transform: all 2s;
+        @media screen and (max-width: 768px) {
+          color: var(--primary-color);
+          
+        }
       }
     }
 }
