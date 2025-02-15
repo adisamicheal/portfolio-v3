@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import styles from "./Footer.module.scss";
+import SpotifyCard from "../SpotifyCard/SpotifyCard";
 
 const Footer = () => {
   const [time, setTime] = useState("");
@@ -28,30 +29,34 @@ const Footer = () => {
   const goToSocial = (url: string) => {
     window.open(url, "_blank");
   };
-  
+
   const clickToCopyEmail = () => {
     const email = "adisamicheal20@gmail.com";
 
-    navigator.clipboard.writeText(email).then(
-      () => {
-        setButtonText("copied");
-        setTimeout(() => {
-          setButtonText("Click here to copy");
-        }, 2000);
-      },
-    );
-  }
+    navigator.clipboard.writeText(email).then(() => {
+      setButtonText("copied");
+      setTimeout(() => {
+        setButtonText("Click here to copy");
+      }, 2000);
+    });
+  };
 
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__collaborate}>
         <div className={styles.footer__collaborate__wrapper}>
-          <a href="mailto:adisamicheal20@gmail.com" className={styles.footer__collaborate__text}>
+          <a
+            href="mailto:adisamicheal20@gmail.com"
+            className={styles.footer__collaborate__text}
+          >
             Talk to me — Let&apos;s Collaborate
           </a>
         </div>
         <div className={styles.footer__collaborate__email}>
-          <Button className={styles.footer__collaborate__email__button} onClick={clickToCopyEmail}>
+          <Button
+            className={styles.footer__collaborate__email__button}
+            onClick={clickToCopyEmail}
+          >
             {buttonText}
           </Button>
           <p>adisamicheal20@gmail.com</p>
@@ -62,6 +67,10 @@ const Footer = () => {
           <p>
             LISBON, PORTUGAL <span>{time || "Loading..."}</span>
           </p>
+          <div className={styles.footer__footnote__music}>
+
+          <SpotifyCard />
+          </div>
         </div>
         <div className={styles.footer__footnote__social}>
           <Button

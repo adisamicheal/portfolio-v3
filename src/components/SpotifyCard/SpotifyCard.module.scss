@@ -1,0 +1,40 @@
+.spotifyCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  &__albumArtContainer {
+    position: relative;
+    &__albumArt {
+      width: 20px;
+      height: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__trackInfo {
+    font-size: 12px;
+      &__playingIndicator {
+        display: flex;
+        gap: 2px;
+    
+        &__soundWave {
+          width: 4px;
+          height: 12px;
+          background: #1db954;
+          animation: soundWave 1s infinite ease-in-out;
+    
+          &:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+          &:nth-child(3) {
+            animation-delay: 0.4s;
+          }
+        }
+      }
+  }
+}
+
+  @keyframes soundWave {
+    0%, 100% { transform: scaleY(0.3); }
+    50% { transform: scaleY(1); }
+  }

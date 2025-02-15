@@ -10,7 +10,7 @@ import SpotifyPlay from "@/components/SpotifyPlay/SpotifyPlay";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <SpotifyPlay />
+      {/* <SpotifyPlay /> */}
       <Header />
       <main>
         <Hero />

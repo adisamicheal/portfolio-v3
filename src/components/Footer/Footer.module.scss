@@ -65,13 +65,19 @@
   }
   &__footnote {
     display: flex;
-    align-items: center;
+    align-items:first baseline;
     justify-content: space-between;
     padding: 100px 50px;
+    font-size: 12px;
     @media screen and (max-width: 768px) {
+      align-items: start;
       flex-direction: column-reverse;
       gap: 50px;
+      padding: 50px 20px;
       
+    }
+    &__music {
+      margin-top: 10px;
     }
     &__social {
       display: flex;
@@ -80,7 +86,7 @@
     }
   }
   &__button {
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase;
   }
 }

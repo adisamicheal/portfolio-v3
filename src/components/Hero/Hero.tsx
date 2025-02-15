@@ -59,7 +59,7 @@ const Hero = () => {
       .fromTo(
         servicesRef.current,
         {
-          opacity: 0.5,
+          opacity: 1,
           y: 50,
         },
         {
