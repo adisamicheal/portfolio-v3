@@ -69,27 +69,25 @@ const SpotifyCard = () => {
 
         <div className={styles.spotifyCard__trackInfo}>
           <div className={styles.spotifyCard__trackInfo__playingIndicator}>
+              <span
+                className={
+                  styles.spotifyCard__trackInfo__playingIndicator__soundWave
+                }
+              />
+              <span
+                className={
+                  styles.spotifyCard__trackInfo__playingIndicator__soundWave
+                }
+              />
+              <span
+                className={
+                  styles.spotifyCard__trackInfo__playingIndicator__soundWave
+                }
+              />
             {track.isPlaying ? (
-              <>
-                <span
-                  className={
-                    styles.spotifyCard__trackInfo__playingIndicator__soundWave
-                  }
-                />
-                <span
-                  className={
-                    styles.spotifyCard__trackInfo__playingIndicator__soundWave
-                  }
-                />
-                <span
-                  className={
-                    styles.spotifyCard__trackInfo__playingIndicator__soundWave
-                  }
-                />
-                <p>&nbsp; Now playing</p>
-              </>
+                <p>&nbsp; Listening now</p>
             ) : (
-              <p>Most played 2024</p>
+              <p>Last played</p>
             )}
           </div>
           <p>

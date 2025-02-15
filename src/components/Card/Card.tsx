@@ -1,14 +1,51 @@
+import gsap from "gsap";
 import { CardProps } from "@/types";
 import styles from "./Card.module.scss";
+import { useEffect, useRef } from "react";
 
 const Card = ({ id, name, image }: CardProps) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = cardRef.current;
+  
+    gsap.fromTo(
+      element,
+      { opacity: 0, y: 200, rotationZ: 5 },
+      {
+        opacity: 1,
+        y: 0,
+        rotationZ: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 85%",
+        },
+      }
+    );
+  
+    gsap.to(element, {
+      y: -200,
+      opacity: 1,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: element,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1,
+      },
+    });
+  
+  }, []);
+  
   return (
-    <div className={styles.card} key={id}>
+    <div className={styles.card} key={id} ref={cardRef}>
       <img className={styles.card__image} src={image} alt={name} />
       <div className={styles.card__name}>
-        <h3  className={styles.card__name__text}>{name}</h3>
+        <h3 className={styles.card__name__text}>{name}</h3>
 
-        <div  className={styles.card__name__icon}>
+        <div className={styles.card__name__icon}>
           <svg
             width="38"
             height="16"

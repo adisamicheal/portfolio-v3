@@ -23,7 +23,7 @@
       padding-right: 4rem;
       font-weight: 700;
       letter-spacing: -0.5rem;
-      animation: marquee 25s linear infinite;
+      animation: marquee 10s linear infinite;
       will-change: transform;
       &:hover {
         animation-play-state: paused;

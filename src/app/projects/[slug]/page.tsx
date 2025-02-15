@@ -189,7 +189,7 @@ const PortfolioPage = () => {
         </div>
 
         <div className={`${styles.portfolio__image} portfolio-image`}>
-          <img src={project.image} alt={project.name} />
+          <img src={project.image} alt={project.quote} />
         </div>
 
         <div className={styles.portfolio__role} data-animate="slide-up">

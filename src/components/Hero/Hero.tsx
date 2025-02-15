@@ -63,7 +63,7 @@ const Hero = () => {
           y: 50,
         },
         {
-          opacity: 1,
+          opacity: 0,
           y: 0,
           ease: "power4.out",
           duration: 1.5,
