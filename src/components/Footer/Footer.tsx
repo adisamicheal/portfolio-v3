@@ -46,15 +46,15 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footer__collaborate}>
         <div className={styles.footer__collaborate__wrapper}>
-          <p className={styles.footer__collaborate__text}>
+          <a href="mailto:adisamicheal20@gmail.com" className={styles.footer__collaborate__text}>
             Talk to me — Let's Collaborate
-          </p>
+          </a>
         </div>
         <div className={styles.footer__collaborate__email}>
           <Button className={styles.footer__collaborate__email__button} onClick={clickToCopyEmail}>
             {buttonText}
           </Button>
-          <a href="mailto:adisamicheal20@gmail.com">adisamicheal20@gmail.com</a>
+          <p>adisamicheal20@gmail.com</p>
         </div>
       </div>
       <div className={styles.footer__footnote}>

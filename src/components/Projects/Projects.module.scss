@@ -10,4 +10,11 @@
         flex-wrap: wrap;
         gap: 12rem;
     }
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+        &__cards {
+            gap: 5rem;
+        }
+        
+    }
 }

@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Kafene",
+        "slug": "kafene",
         "industry": "Finance",
         "challenge": "Kafene’s messaging was contingent on the promise that anyone could create an account and go as far as enabling payment in “in less than 5 minutes”. This meant that whatever software solution we built needed to be optimised for speed, and more importantly, the vendor’s onboarding process should be at most four minutes fifty-nine seconds long.",
         "services": [
@@ -32,7 +33,7 @@
         "image": "https://res.cloudinary.com/michellead/image/upload/v1739502135/Rectangle_6_luwvqt.png",
         "url": "https://kafene.com",
         "job_description": [
-            [
+            
                 "Responsible for engineering 40% of new features on the admin, merchant and customer dashboards.",
                 "Improved usability performance, and Fixed 90% of Kafene customer application bug issues.",
                 "Created and maintained a new Kafene customer dashboard to design specifications.",
@@ -43,12 +44,13 @@
                 "Responsible for handling frontend codebases versioning with Git and Github.",
                 "Lead a team of 7 engineers to build the Kafene platform - Admin, Merchant & Customer dashboards.",
                 "Scope task on task management board (JIRA, Pivotal Tracker) with Product managers and QA engineers."
-            ]
+            
         ]
     },
     {
         "id": 2,
         "name": "Patronize",
+        "slug": "patronize",
         "industry": "Finance",
         "challenge": "A lot of businesses in Nigeria are out looking for alternative to traditional banks for their business money problem. Transfer or payments confirmation take a long time causing back and forth with customers or service consumers. Patronize is a solution to this problem.",
         "services": [
@@ -70,7 +72,7 @@
         "quote": "Patronize enables your business accept pocket app (fka as abeg) payments, helps you reach more customers and make more successful sales. The fastest bank transfer verification ever.",
         "image": "https://res.cloudinary.com/michellead/image/upload/v1739502135/Rectangle_6_1_ubsd64.png",
         "url": "https://patronize.co",
-        "job_description": [
+        "job_description": 
             [
                 "Build Giveaway feature in patronize v1",
                 "Build patronize storefront",
@@ -78,11 +80,12 @@
                 "Implement UX and UI flow of patronize v2",
                 "Build Piggytech component library published all piggyvest product"
             ]
-        ]        
+             
     },
     {
         "id": 3,
         "name": "Rigour OS",
+        "slug": "rigour-os",
         "industry": "Health",
         "challenge": "The healthcare system in Nigeria/Africa, while resilient and vast, is riddled with inefficiencies and challenges that affect both public and private healthcare providers and patients.",
         "services": [
@@ -104,7 +107,7 @@
         "image": "https://res.cloudinary.com/michellead/image/upload/v1739502135/Rectangle_6_3_ohlvbe.png",
         "url": "https://rigouros.com",
         "job_description": [
-            [
+            
                 "Lead a team of 5 engineers to build the Rigour OS platform - Patient, Admin & Provider dashboards.",
                 "Worked with the product team to define the product roadmap and feature prioritization.",
                 "Worked with UI/UX designers to implement the design system for the Rigour OS platform.",
@@ -112,12 +115,13 @@
                 "Built the Rigour OS marketing website.",
                 "Implement UX and UI flow of Rigour OS platform.",
                 "Built component library published to npm for all Rigour OS product."
-            ]
+            
         ]
     },
     {
         "id": 4,
         "name": "TLScontact",
+        "slug": "tlscontact",
         "industry": "Government - Visa and Consular Services",
         "challenge": "Piggyvest is a financial technology company that helps people save money and invest in financial products. The company was founded in 2016 by Somto Ifezue, Joshua Chibueze, and Odunayo Eweniyi.",
         "services": [
@@ -142,14 +146,14 @@
         "image": "https://res.cloudinary.com/michellead/image/upload/v1739502135/Rectangle_6_2_u6hea9.png",
         "url": "https://www.tlscontact.com/en/",
         "job_description": [
-            [
+            
                 "Worked with UI/UX designers to implement the design system for TLScontact Biometrics solution.",
                 "Built the TLScontact Biometrics solution from scratch.",
                 "Meet with UKVI and TLScontact stakeholders to gather requirements for the TLScontact Biometrics solution and define product expectations.",
                 "Built the TLScontact Documents self-upload UI.",
                 "Write python scripts for file decryption and encryption workflows.",
                 "Worl with Engineering manager to define the product roadmap and feature prioritization on the frontend."
-            ]
+            
         ]
     }
 ]

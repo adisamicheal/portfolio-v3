@@ -1,0 +1,26 @@
+.spotifyPlay {
+  position: fixed;
+  // top: 100%;
+  bottom: 5%;
+  right: 5%;
+  width: 350px;
+    height: 350px;
+  z-index: 1000;
+  overflow: hidden;
+  background: #000000;
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+}
+
+.dragHandle {
+  padding: 20px;
+  user-select: none;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
