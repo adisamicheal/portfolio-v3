@@ -138,13 +138,20 @@ const PortfolioPage = () => {
   return (
     <div className={styles.project} ref={containerRef}>
       <Header />
-      {/* {isLoading ? (
-        <div className={styles.loading}>Loading...</div>
-      ) : ( */}
       <div className={styles.portfolio}>
         <div className={styles.portfolio__hero}>
           <h3 className={styles.portfolio__hero__name} data-animate="slide-up">
             {project.name}
+            <span>
+              <Button
+                className={styles.portfolio__hero__icon}
+                onClick={() => {
+                  window.open(project.url, "_blank");
+                }}
+              >
+                See project
+              </Button>
+            </span>
           </h3>
           <p data-animate="slide-up">Industry - {project.industry}</p>
 
