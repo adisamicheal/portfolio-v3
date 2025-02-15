@@ -36,6 +36,12 @@ export const metadata: Metadata = {
   twitter: {
     site: "@micheallead",
     title: "Micheal Adisa",
+    images: [
+      {
+        url: "https://michellead.netlify.app/img/heroImage.a0548443.png",
+        alt: "Micheal Adisa",
+      },
+    ],
   },
 };
 
