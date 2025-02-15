@@ -64,6 +64,7 @@ const SpotifyCard = () => {
             width={80}
             height={80}
             className={styles.spotifyCard__albumArtContainer__albumArt}
+            priority
           />
         </div>
 

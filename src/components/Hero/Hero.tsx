@@ -132,7 +132,7 @@ const Hero = () => {
               engineer based in Lisbon, Portugal, highly skilled with web
               performance, accessibility & UI Engineering. Focused on creating
               solutions on the web, working with brands and industry leaders
-              such as TLScontact, Kafene, Enyata, Piggyvest amongst others to
+              such asTLScontact, Kafene, Enyata, Piggyvest amongst others to
               achieve this.
             </p>
           </div>

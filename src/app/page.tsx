@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Footer from "@/components/Footer/Footer";
 import Projects from "@/components/Projects/Projects";
-import SpotifyPlay from "@/components/SpotifyPlay/SpotifyPlay";
+// import SpotifyPlay from "@/components/SpotifyPlay/SpotifyPlay";
 
 export default function Home() {
   return (
