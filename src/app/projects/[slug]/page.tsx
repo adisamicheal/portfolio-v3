@@ -177,7 +177,7 @@ const PortfolioPage = () => {
             className={styles.portfolio__hero__quote}
             data-animate="slide-up"
           >
-            <p>"{project.quote}"</p>
+            <p>&quot;{project.quote}&quot;</p>
           </div>
         </div>
 

@@ -47,7 +47,7 @@ const Footer = () => {
       <div className={styles.footer__collaborate}>
         <div className={styles.footer__collaborate__wrapper}>
           <a href="mailto:adisamicheal20@gmail.com" className={styles.footer__collaborate__text}>
-            Talk to me — Let's Collaborate
+            Talk to me — Let&apos;s Collaborate
           </a>
         </div>
         <div className={styles.footer__collaborate__email}>
