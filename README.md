@@ -16,7 +16,7 @@ GOOGlE_ANALYTICS_ID=G-YOUR_GOOGlE_ANALYTICS_ID
 
 ## Getting Started
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
