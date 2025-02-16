@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -50,9 +51,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const gooleAnalyticsId = process.env.GOOGlE_ANALYTICS_ID || '';
+  console.log('gooleAnalyticsId', gooleAnalyticsId);
   return (
     <html lang="en">
       <body className={`${openSans.variable}`}>{children}</body>
+      <GoogleAnalytics gaId={gooleAnalyticsId} />
     </html>
   );
 }
