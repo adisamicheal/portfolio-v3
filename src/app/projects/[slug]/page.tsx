@@ -163,7 +163,16 @@ const PortfolioPage = () => {
             </div>
             <div>
               <h4>Services</h4>
-              <p>{project.services}</p>
+              <div className={styles.portfolio__hero__grid__services}>
+                {project.services.map((service, index) => (
+                  <Button
+                    key={index}
+                    className={`${styles.portfolio__hero__button} tech-item`}
+                  >
+                    {service}
+                  </Button>
+                ))}
+              </div>
             </div>
             <div>
               <h4>Tech Stacks</h4>
@@ -172,6 +181,7 @@ const PortfolioPage = () => {
                   <Button
                     key={index}
                     className={`${styles.portfolio__hero__button} tech-item`}
+                    // tag={true}
                   >
                     {tech}
                   </Button>

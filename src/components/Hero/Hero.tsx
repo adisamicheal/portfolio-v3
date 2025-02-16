@@ -121,7 +121,7 @@ const Hero = () => {
         </h1>
         <h1  className={styles.hero__role__mobile}>
               
-          Front — End Engineer
+          Front — End <br /> Engineer
         </h1>
 
         <span className={styles.hero__role__cap}>
