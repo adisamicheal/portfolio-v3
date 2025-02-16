@@ -91,6 +91,8 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
+    max-width: 1440px;
+    margin: auto;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 50px;
