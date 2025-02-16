@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Micheal Adisa",
-  description: `I am a softwarevengineer, highly skilled with webperformance, accessibility & UI Engineering. Focused on creating solutions on the web, working with brands and industry leaders such as TLScontact, Kafene, Enyata, Piggyvest amongst others to achieve this.`,
+  description: `I am a software engineer, highly skilled with web performance, accessibility & UI Engineering. Focused on creating solutions on the web, working with brands and industry leaders such as TLScontact, Kafene, Enyata, Piggyvest amongst others to achieve this.`,
   keywords: [
     "web performance",
     "accessibility",
