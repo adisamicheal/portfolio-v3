@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Environmebt Variables
+
+First, add environment Variables.
+
+Create a .env file and add the follwoing key with their corresponding values that you can get from Spotify API and Google Analytics
+
+```bash
+REACT_APP_SPOTIFY_CLIENT_ID=YOUR_SPOTIFY_CLIENT_ID
+REACT_APP_SPOTIFY_CLIENT_SECRET=YOUR_SPOTIFY_CLIENT_SECRET
+REACT_APP_SPOTIFY_REFRESH_TOKEN=YOUR_SPOTIFY_REFRESH_TOKEN
+NEXT_PUBLIC_SPOTIFY_REDIRECT_URI=http://localhost:3000/api/auth/callback/spotify
+GOOGlE_ANALYTICS_ID=G-YOUR_GOOGlE_ANALYTICS_ID
+```
+
 ## Getting Started
 
 First, run the development server:
