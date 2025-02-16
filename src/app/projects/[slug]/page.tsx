@@ -181,7 +181,6 @@ const PortfolioPage = () => {
                   <Button
                     key={index}
                     className={`${styles.portfolio__hero__button} tech-item`}
-                    // tag={true}
                   >
                     {tech}
                   </Button>
