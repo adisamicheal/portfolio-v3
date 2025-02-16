@@ -9,6 +9,7 @@ export type ProjectProps = {
   className?: string;
   id: number;
   name: string;
+  parent?: string;
   slug: string;
   industry: string;
   challenge: string;

@@ -50,6 +50,7 @@
     {
         "id": 2,
         "name": "Patronize",
+        "parent": "by piggyvest",
         "slug": "patronize",
         "industry": "Finance",
         "challenge": "A lot of businesses in Nigeria are out looking for alternative to traditional banks for their business money problem. Transfer or payments confirmation take a long time causing back and forth with customers or service consumers. Patronize is a solution to this problem.",

@@ -141,7 +141,7 @@ const PortfolioPage = () => {
       <div className={styles.portfolio}>
         <div className={styles.portfolio__hero}>
           <h3 className={styles.portfolio__hero__name} data-animate="slide-up">
-            {project.name}
+            {project.name} <span>{project?.parent}</span>
             <span>
               <Button
                 className={styles.portfolio__hero__icon}
