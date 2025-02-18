@@ -57,6 +57,7 @@
       align-items: center;
       gap: 5rem;
       padding-right: 50px;
+      flex-wrap: wrap;
     }
     &__engineer {
       font-size: 16rem;
@@ -64,6 +65,7 @@
       text-transform: uppercase;
       font-weight: 700;
       will-change: transform, opacity;
+      word-break: break-all;
       @media screen and (max-width: 768px) {
         display: none;
         
@@ -74,6 +76,10 @@
       font-size: 16px;
       max-width: 378px;
       color: var(--primary-color);
+      @media screen and (max-width: 1538px) {
+        padding-left: 20px;
+        
+      }
       span {
         color: #ffffff;
         &:hover {
