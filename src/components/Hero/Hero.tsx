@@ -119,11 +119,9 @@ const Hero = () => {
             ))}
           </div>
         </h1>
-        <h1  className={styles.hero__role__mobile}>
-              
+        <h1 className={styles.hero__role__mobile}>
           Front — End <br /> Engineer
         </h1>
-
         <span className={styles.hero__role__cap}>
           <h1 className={styles.hero__role__engineer}>Engineer</h1>
           <div className={styles.hero__role__about}>

@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   &__collaborate {
     overflow: hidden;
     position: relative;
@@ -43,7 +44,6 @@
         font-size: 5rem;
         letter-spacing: normal;
         padding-right: 2rem;
-        
       }
     }
     &__email {
@@ -55,7 +55,6 @@
       gap: 20px;
       @media screen and (max-width: 768px) {
         font-size: 1.5rem;
-        
       }
       &__button {
         opacity: 0;
@@ -74,7 +73,7 @@
   }
   &__footnote {
     display: flex;
-    align-items:first baseline;
+    align-items: first baseline;
     justify-content: space-between;
     padding: 100px 50px;
     font-size: 12px;
@@ -83,7 +82,6 @@
       flex-direction: column-reverse;
       gap: 50px;
       padding: 50px 20px;
-      
     }
     &__music {
       margin-top: 10px;
@@ -97,6 +95,11 @@
   &__button {
     font-size: 12px;
     text-transform: uppercase;
+  }
+  &__svg {
+    width: 100%;
+    position: absolute;
+    margin-top: 50px;
   }
 }
 
