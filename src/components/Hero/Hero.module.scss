@@ -55,7 +55,7 @@
     &__cap {
       display: flex;
       align-items: center;
-      gap: 5rem;
+      gap: 3rem;
       padding-right: 50px;
       flex-wrap: wrap;
     }
@@ -96,7 +96,8 @@
   &__services {
     display: flex;
     justify-content: space-between;
-    padding: 50px 20px;
+    gap: 20px;
+    padding: 50px 70px;
     max-width: 1440px;
     margin: auto;
     @media screen and (max-width: 768px) {
