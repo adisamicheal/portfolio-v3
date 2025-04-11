@@ -25,7 +25,7 @@ const SpotifyCard = () => {
         const response = await axios.get("/api/spotify");
         setTrack(response.data);
       } catch (error) {
-        console.error("Failed to fetch Spotify data:", error);
+        // console.error("Failed to fetch Spotify data:", error);
         setTrack(null);
       } finally {
         setLoading(false);
@@ -39,7 +39,7 @@ const SpotifyCard = () => {
 
   if (loading) {
     return (
-      <div className="spotify-card loading">
+      <div className="spotify-card loading" data-testid="shimmer">
         <div className="shimmer-art" />
         <div className="shimmer-text" />
         <div className="shimmer-subtext" />

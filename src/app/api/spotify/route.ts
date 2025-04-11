@@ -118,8 +118,8 @@ async function fetchLastPlayed(accessToken: string) {
       trackUrl: track.external_urls.spotify,
     };
   } catch (error) {
-    console.error("Failed to fetch last played:", error);
-    return null;
+    // console.error("Failed to fetch last played:", error);
+    return error;
   }
 }
 
